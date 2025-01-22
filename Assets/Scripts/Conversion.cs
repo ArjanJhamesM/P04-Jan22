@@ -6,10 +6,10 @@ using TMPro;
 public class Conversion : MonoBehaviour
 {
     private double philippinePeso;
-    private double unitedStatesDollar = 0.017110453d;
-    private double indianRupees = 1.4802132d;
-    private double japaneseYen = 2.66356d;
-    private double britishPounds = 0.013845759d;
+    private double unitedStatesDollarRate = 0.017110453d;
+    private double indianRupeeRate = 1.4802132d;
+    private double japaneseYenRate = 2.66356d;
+    private double britishPoundRate = 0.013845759d;
 
     public TMP_InputField inputField;
     public TextMeshProUGUI textMeshProUGUI;
@@ -25,7 +25,7 @@ public class Conversion : MonoBehaviour
         {
             Debug.Log(numericValue);
 
-            philippinePeso = numericValue * unitedStatesDollar;
+            philippinePeso = numericValue * unitedStatesDollarRate;
             textMeshProUGUI.text = "USD " + philippinePeso.ToString();
         }
         else
@@ -42,7 +42,7 @@ public class Conversion : MonoBehaviour
         {
             Debug.Log(numericValue);
 
-            philippinePeso = numericValue * indianRupees;
+            philippinePeso = numericValue * indianRupeeRate;
             textMeshProUGUI.text = "INR " + philippinePeso.ToString();
         }
         else
@@ -59,7 +59,7 @@ public class Conversion : MonoBehaviour
         {
             Debug.Log(numericValue);
 
-            philippinePeso = numericValue * japaneseYen;
+            philippinePeso = numericValue * japaneseYenRate;
             textMeshProUGUI.text = "JPY " + philippinePeso.ToString();
         }
         else
@@ -76,7 +76,7 @@ public class Conversion : MonoBehaviour
         {
             Debug.Log(numericValue);
 
-            philippinePeso = numericValue * britishPounds;
+            philippinePeso = numericValue * britishPoundRate;
             textMeshProUGUI.text = "GBP " + philippinePeso.ToString();
         }
         else
